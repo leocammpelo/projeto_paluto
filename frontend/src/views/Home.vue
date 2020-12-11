@@ -4,6 +4,7 @@
     <Carousel />
     <el-row class="max-width-container">
       <Presentation/>
+      <Products />
     </el-row>
   </el-row>
   
@@ -17,6 +18,7 @@
 import Navbar from "../components/Navbar"
 import Carousel from "../components/Home/Carousel"
 import Presentation from "../components/Home/Presentation"
+import Products from "../components/Home/Products"
 
 export default {
   name: 'Home',
@@ -24,6 +26,7 @@ export default {
     Navbar,
     Carousel,
     Presentation,
+    Products,
   }
 }
 </script>

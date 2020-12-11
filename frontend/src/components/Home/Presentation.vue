@@ -148,10 +148,10 @@ export default {
         },
 
         handleScroll() {
-            const ytComponentBounding = this.ytComponent.getBoundingClientRect();
-            if(ytComponentBounding.top < window.innerHeight)
+            const youTubeComponenteBounding = this.youTubeComponente.getBoundingClientRect();
+            if(youTubeComponenteBounding.top < window.innerHeight)
                 this.player.playVideo();
-            if(ytComponentBounding.top >= window.innerHeight || ytComponentBounding.top + ytComponentBounding.height <= 0)
+            if(youTubeComponenteBounding.top >= window.innerHeight || youTubeComponenteBounding.top + youTubeComponenteBounding.height <= 0)
                 this.player.pauseVideo();
         },
     },
@@ -162,7 +162,7 @@ export default {
     },
 
     mounted() {
-        this.youTubeComponente = document.querySelector('youtube-video');
+        this.youTubeComponente = document.querySelector('.youtube-video');
 
         window.addEventListener('scroll', () => {
             const scrolled = window.scrollY;
