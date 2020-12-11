@@ -1,6 +1,5 @@
 <template>
     <b-container>
-
         <b-navbar class="navbar-style" toggleable="lg">
 
             <b-navbar-brand href="#">
@@ -25,14 +24,17 @@
             </b-collapse>
 
         </b-navbar>
-    
     </b-container>
 </template>
 
 <style lang="scss" scoped>
+@import '../styles/variables.scss';
+
     .container {
+        position: fixed ;
         max-width: 100% !important;
         padding: 0px !important;
+        height: 10vh !important;
 
         .navbar-style {
             background-color: #7B2D33;
@@ -48,7 +50,6 @@
             }
 
             .item-style {
-                font-family: Roboto;
                 font-style: normal;
                 letter-spacing: 0.05em;
                 margin-left: 5px;
@@ -57,7 +58,7 @@
             }
 
             .item-style:hover {
-                color: #B38F6F;
+                color: #D8965C;
             }
 
             .whatsapp-style {
@@ -130,3 +131,16 @@
         }
     }
 </style>
+<script>
+export default {
+    name: 'Navbar',
+
+    data() {
+
+    },
+    methods: {
+        
+    }
+
+}
+</script>
