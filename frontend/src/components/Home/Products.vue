@@ -2,7 +2,7 @@
     <el-container id="productsSection" class="products-container">
         <el-row class="products-titulos">
             <h4 class="subtitulo"> Produtos em destaque </h4>
-            <h2 class="titulo"> NOSSO SHOWROOM </h2>
+            <h2 class="titulo"> SOB NOSSO OLHAR </h2>
         </el-row>
         <el-row class="max-width-container product-estilo">
             <el-col :xs="24" :sm="8"
@@ -28,6 +28,7 @@
         flex-direction: column !important;
         justify-content: center;
         max-width: $container-max-width;
+        background-color: $secondary-background-color;
         margin: 0 auto;
         width: 100%;
 
@@ -51,7 +52,7 @@
         }
 
         .product-estilo {
-            margin-top: 40px;
+            margin-top: 15px;
             height: auto;
             width: 80% !important;
         }
