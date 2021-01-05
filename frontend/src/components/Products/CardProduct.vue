@@ -23,9 +23,9 @@
 @import '../../styles/variables.scss';
     .flip-card {
         height: 430px;
+        margin: 20px;
         width: auto;
         background-color: transparent;
-        border: 1px solid #f1f1f1;
         perspective: 1000px;
 
         .flip-card-inner {
@@ -42,7 +42,7 @@
                 color: black;
 
                 .card-item {
-                    margin: 20px;
+                    height: 430px;
 
                     .figure {
                         position: relative;
@@ -57,7 +57,7 @@
                         top: 50%;
                         left: 50%;
                         height: 100%;
-                        width: auto;
+                        width: 100%;
                         -webkit-transform: translate(-50%,-50%);
                             -ms-transform: translate(-50%,-50%);
                                 transform: translate(-50%,-50%);            
@@ -69,7 +69,7 @@
                     }
 
                     .title-style {
-                        margin-top: 2px;
+                        margin-top: 15px;
                         margin-bottom: 0px;
                         font-size: 20px;
                         font-weight: bold;
@@ -136,22 +136,32 @@
 
     @media screen and (max-width: 1024px) {
         .flip-card {
-            margin-top: 20px;
+            margin-top: 10px;
+            height: 300px !important;
+
 
             .flip-card-inner {
 
                 .flip-card-front {
 
                     .card-item {
+                        height: 100%;
 
                         .figure {
-                            height: 250px;
+                            height: 200px;
                         }
+
+                        .title-style {
+                            font-size: 15px;
+                        }
+
+                        
                     }
                 }
                 
                 .flip-card-back {
-                    
+                    height: 100%;
+
                     p {
                         font-size: 10px;
                     }
