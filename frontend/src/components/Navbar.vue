@@ -3,7 +3,7 @@
         <b-navbar class="navbar-style" toggleable="lg">
 
             <b-navbar-brand href="#">
-                <img class="logo-style" src="../assets/logo.png" alt="Logo">
+                <img class="logo-style" src="../assets/logo.png"  alt="Logo" @click="scrollTop()">
             </b-navbar-brand>
             
             <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
@@ -138,9 +138,16 @@ export default {
     data() {
 
     },
+    
     methods: {
-        
-    }
+        scrollTop() {
+            window.scrollTo(0, 0);
+        },
+    },
+    
+    created() {
+        window.addEventListener('resiza', this.setMode)
+    },
 
 }
 </script>
