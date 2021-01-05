@@ -1,6 +1,6 @@
 <template>
     <b-container>
-        <b-navbar class="navbar-style" toggleable="lg">
+        <b-navbar id="navbar" toggleable="lg">
 
             <b-navbar-brand href="#">
                 <img class="logo-style" src="../assets/logo.png"  alt="Logo" @click="scrollTop()">
@@ -10,7 +10,7 @@
             
             <b-collapse id="navbar-toggle-collapse" is-nav>
                 <b-navbar-nav class="ml-auto"> 
-                    <b-nav-item> <font class="item-style"> Sobre Nós </font> </b-nav-item>
+                    <b-nav-item @click="scrollToAbout()"> <font class="item-style"> Sobre Nós </font> </b-nav-item>
                     <b-nav-item> <font class="item-style"> Equipe </font> </b-nav-item>
                     <b-nav-item> <font class="item-style"> Produtos </font> </b-nav-item>
                     <b-nav-item> <font class="item-style"> Contatos </font> </b-nav-item>
@@ -34,120 +34,150 @@
         position: fixed ;
         max-width: 100% !important;
         padding: 0px !important;
-        height: 10vh !important;
 
-        .navbar-style {
-            background-color: #7B2D33;
-
-            .logo-style {
-                height: 50px;
-                margin-left: 80px;
-            }
-            .logo-style:hover {
-                -webkit-transform: scale(0.8);
-                -ms-transform: scale(0.8);
-                transform: scale(0.8);
-            }
-
-            .item-style {
-                font-style: normal;
-                letter-spacing: 0.05em;
-                margin-left: 5px;
-                margin-right: 5px;
-                color: #FEFEFE;
-            }
-
-            .item-style:hover {
-                color: #D8965C;
-            }
-
-            .whatsapp-style {
-                height: 22px;
-                width: 22px;
-                margin-left: 20px;
-            }
-
-            .instagram-style {
-                height: 22px;
-                width: 22px;
-                margin-right: 80px;
-            }           
+        .logo-style {
+            height: 50px;
+            margin-left: 80px;
         }
+        .logo-style:hover {
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+
+        .item-style {
+            font-style: normal;
+            letter-spacing: 0.05em;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: white; 
+        }
+
+        .item-style:hover {
+            color: #D8965C;
+        }
+
+        .whatsapp-style {
+            height: 22px;
+            width: 22px;
+            margin-left: 20px;
+        }
+
+        .instagram-style {
+            height: 22px;
+            width: 22px;
+            margin-right: 80px;
+        }           
+        
 
         @media screen and (max-width:767px) {
 
-            .navbar-style {
-
-                .logo-style {
-                    height: 25px;
-                    margin-left: 20px;
-                }
-
-                .item-style {
-                    margin-left: 2px;
-                    margin-right: 2px;
-                }
-
-                .whatsapp-style {
-                    height: 12px;
-                    width: 12px;
-                    margin-left: 2px;
-                }
-
-                .instagram-style {
-                    height: 12px;
-                    width: 12px;
-                    margin-left: 2px;
-                }           
+            .logo-style {
+                height: 25px;
+                margin-left: 20px;
             }
+
+            .item-style {
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+
+            .whatsapp-style {
+                height: 12px;
+                width: 12px;
+                margin-left: 2px;
+            }
+
+            .instagram-style {
+                height: 12px;
+                width: 12px;
+                margin-left: 2px;
+            }           
+            
         }
 
         @media screen and (max-width:991px) {
 
-            .navbar-style {
-
-                .logo-style {
-                    height: 35px;
-                    margin-left: 20px;
-                }
-
-                .item-style {
-                    margin-left: 2px;
-                    margin-right: 2px;
-                }
-
-                .whatsapp-style {
-                    height: 15px;
-                    width: 15px;
-                    margin-left: 2px;
-                }
-
-                .instagram-style {
-                    height: 15px;
-                    width: 15px;
-                    margin-left: 2px;
-                }           
+            .logo-style {
+                height: 35px;
+                margin-left: 20px;
             }
+
+            .item-style {
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+
+            .whatsapp-style {
+                height: 15px;
+                width: 15px;
+                margin-left: 2px;
+            }
+
+            .instagram-style {
+                height: 15px;
+                width: 15px;
+                margin-left: 2px;
+            }           
         }
     }
 </style>
+
 <script>
 export default {
     name: 'Navbar',
-
     data() {
+        return {
 
+        }
     },
-    
+
     methods: {
         scrollTop() {
             window.scrollTo(0, 0);
         },
+        
+        changeColorNav(condicao) {
+            if(condicao == "setColor") {
+                document.getElementById("navbar").style.backgroundColor="#7B2D33"
+            }
+            else if (condicao == "notSetColor") {
+                document.getElementById("navbar").style.backgroundColor="transparent"
+            }
+            else if(condicao == "setOpacity") {
+                document.getElementById("navbar").style.backgroundColor = "rgba(79,79,79,0.2)"
+            }
+        },
+        
+        scrollToAbout() {
+            document.getElementById('presentation').scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
     },
-    
+
     created() {
         window.addEventListener('resiza', this.setMode)
     },
+    
+    mounted() {
+        window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const firstDiv = document.getElementById("presentation").offsetHeight;
+        if(scrolled > firstDiv) {
+            this.changeColorNav("setColor");
+        }
 
+        else if (scrolled > 1 && scrolled <= firstDiv) {
+            this.changeColorNav("setOpacity")
+        }
+
+        else {
+            this.changeColorNav("notSetColor")
+        }
+        });
+    },
+   
 }
+
 </script>
