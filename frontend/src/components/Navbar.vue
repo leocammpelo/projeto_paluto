@@ -11,7 +11,7 @@
             
             <b-collapse id="navbar-toggle-collapse" is-nav>
                 <b-navbar-nav class="ml-auto"> 
-                    <b-nav-item> <font class="item-style"> Sobre Nós </font> </b-nav-item>
+                    <b-nav-item @click="scrollToAbout()"> <font class="item-style"> Sobre Nós </font> </b-nav-item>
                     <b-nav-item> <font class="item-style"> Equipe </font> </b-nav-item>
                     <b-nav-item> <font class="item-style"> Produtos </font> </b-nav-item>
                     <b-nav-item> <font class="item-style"> Contatos </font> </b-nav-item>
@@ -30,6 +30,7 @@
 </template>
 
 <style lang="scss" scoped>
+
     .container {
         max-width: 100% !important;
         padding: 0px !important;
@@ -130,3 +131,51 @@
         }
     }
 </style>
+
+<script>
+export default {
+    name: 'Navbar',
+    data() {
+        return {
+
+        }
+    },
+
+    methods: {
+        changeColorNav(condicao) {
+            if(condicao == "setColor"){
+            document.getElementsByClassName("navbar-style").style.backgroundColor="#282728"
+            }else if (condicao == "notSetColor"){
+            document.getElementsByClassName("navbar-style").style.backgroundColor="transparent"
+            }else if(condicao == "setOpacity"){
+            document.getElementsByClassName("navbar-style").style.backgroundColor = "rgba(118,25,39)"
+            }
+        },
+        
+        scrollToAbout() {
+            document.getElementById('presentation').scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
+    },
+
+    mounted() {
+        window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const firstDiv = document.getElementById("carrouselSection").offsetHeight;
+        if(scrolled > firstDiv){
+            this.changeColorNav("setColor");
+        }
+
+        else if (scrolled > 1 && scrolled <= firstDiv) {
+            this.changeColorNav("setOpacity")
+        }
+
+        else {
+            this.changeColorNav("notSetColor")
+        }
+        });
+    },
+
+}
+</script>
