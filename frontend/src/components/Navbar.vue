@@ -3,7 +3,7 @@
         <b-navbar id="navbar" toggleable="lg">
 
             <b-navbar-brand href="#">
-                <img class="logo-style" src="../assets/logo.png" alt="Logo">
+                <img class="logo-style" src="../assets/logo.png"  alt="Logo" @click="scrollTop()">
             </b-navbar-brand>
             
             <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
@@ -77,14 +77,16 @@
             width: 22px;
             margin-right: 80px;
             fill: white;
-        }
-           
-        .instagram-style:hover {
+        } 
+        
+          .instagram-style:hover {
             -webkit-transform: scale(0.8);
             -ms-transform: scale(0.8);
             transform: scale(0.8);
             fill: #D8965C;
-        }        
+          }
+        
+        }
 
         @media screen and (max-width:767px) {
 
@@ -149,6 +151,10 @@ export default {
     },
 
     methods: {
+        scrollTop() {
+            window.scrollTo(0, 0);
+        },
+        
         changeColorNav(condicao) {
             if(condicao == "setColor") {
                 document.getElementById("navbar").style.backgroundColor="#7B2D33"
@@ -177,6 +183,10 @@ export default {
         },
     },
 
+    created() {
+        window.addEventListener('resiza', this.setMode)
+    },
+    
     mounted() {
         window.addEventListener('scroll', () => {
             const scrolled = window.scrollY;
