@@ -85,8 +85,6 @@
             transform: scale(0.8);
             fill: #D8965C;
           }
-        
-        }
 
         @media screen and (max-width:767px) {
 
