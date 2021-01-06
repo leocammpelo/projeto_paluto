@@ -6,6 +6,7 @@
       <Presentation/>
       <Products />
       <Partners />
+      <Contact />
     </el-row>
   </el-row>
   
@@ -21,6 +22,7 @@ import Carousel from "../components/Home/Carousel"
 import Presentation from "../components/Home/Presentation"
 import Products from "../components/Home/Products"
 import Partners from "../components/Home/Partners"
+import Contact from "../components/Home/Contact"
 
 export default {
   name: 'Home',
@@ -30,6 +32,7 @@ export default {
     Presentation,
     Products,
     Partners,
+    Contact,
   }
 }
 </script>
