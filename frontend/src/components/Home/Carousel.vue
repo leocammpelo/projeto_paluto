@@ -13,7 +13,7 @@
 </template>
 
 <style lang="scss">
-@import '../../styles/variables.scss';
+    @import '../../styles/variables.scss';
 
     .el-carousel__item{
         
