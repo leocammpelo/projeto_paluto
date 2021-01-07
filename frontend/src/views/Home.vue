@@ -5,6 +5,7 @@
     <el-row class="max-width-container">
       <Presentation/>
       <Products />
+      <ArqDecor />
       <Partners />
       <Contact />
     </el-row>
@@ -23,6 +24,7 @@ import Presentation from "../components/Home/Presentation"
 import Products from "../components/Home/Products"
 import Partners from "../components/Home/Partners"
 import Contact from "../components/Home/Contact"
+import ArqDecor from "../components/Home/ArqDecor"
 
 export default {
   name: 'Home',
@@ -31,6 +33,7 @@ export default {
     Carousel,
     Presentation,
     Products,
+    ArqDecor,
     Partners,
     Contact,
   }
