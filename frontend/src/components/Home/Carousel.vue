@@ -100,21 +100,21 @@ export default {
             itens: [
                 {
                     id: 0,
-                    title: "Olá, sou o Leonardo Campelo",
-                    description: "Sou Estudante!",
-                    photo: "https://bn1303files.storage.live.com/y4m7Jqc2cei8lsPtx53bSwQSEgyO2dYA1pA56FPITgmSg9aZ2t8Ji0osa5MxN5NIuYNVGR6VXKEcYvNC4ETo_fERyndzgkk93DrYwmFteQH5tB01ZqMhUa-AAlJRc54GpuSRe5Hh9jHzFlv0fcXHJwxbHVufpPnlxQirvs9rZeMGVR2z3245Yt2YJHWBqvVM4dWSalUoVL7bP0PfLIrvjBOog/Cena%2007_Gebbwork_Escritorio%20Yaris_Carvalho%20Claro%20e%20Preto_Variacao%2003.jpg?psid=1&width=1292&height=862"
+                    title: "Exclusivade ",
+                    description: "Inspiramos você a pensar grande!",
+                    photo: require("../../assets/background1.jpg")
                 },
                 {
                     id: 1,
-                    title: "Olá, sou o Leonardo Campelo",
-                    description: "Sou Estudante!",
-                    photo: "https://bn1303files.storage.live.com/y4m7Jqc2cei8lsPtx53bSwQSEgyO2dYA1pA56FPITgmSg9aZ2t8Ji0osa5MxN5NIuYNVGR6VXKEcYvNC4ETo_fERyndzgkk93DrYwmFteQH5tB01ZqMhUa-AAlJRc54GpuSRe5Hh9jHzFlv0fcXHJwxbHVufpPnlxQirvs9rZeMGVR2z3245Yt2YJHWBqvVM4dWSalUoVL7bP0PfLIrvjBOog/Cena%2007_Gebbwork_Escritorio%20Yaris_Carvalho%20Claro%20e%20Preto_Variacao%2003.jpg?psid=1&width=1292&height=862"
+                    title: "Qualidade",
+                    description: "Nossa satisfação é você!",
+                    photo: require("../../assets/background2.jpg")
                 },
                 {
                     id: 2,
-                    title: "Olá, sou o Leonardo Campelo",
-                    description: "Sou Estudante!",
-                    photo: "https://bn1303files.storage.live.com/y4m7Jqc2cei8lsPtx53bSwQSEgyO2dYA1pA56FPITgmSg9aZ2t8Ji0osa5MxN5NIuYNVGR6VXKEcYvNC4ETo_fERyndzgkk93DrYwmFteQH5tB01ZqMhUa-AAlJRc54GpuSRe5Hh9jHzFlv0fcXHJwxbHVufpPnlxQirvs9rZeMGVR2z3245Yt2YJHWBqvVM4dWSalUoVL7bP0PfLIrvjBOog/Cena%2007_Gebbwork_Escritorio%20Yaris_Carvalho%20Claro%20e%20Preto_Variacao%2003.jpg?psid=1&width=1292&height=862"
+                    title: "Requinte",
+                    description: "Buscamos constatemente a transformação, evolução e modernização!",
+                    photo: require("../../assets/background3.jpg")
                 },
             ],
         }
