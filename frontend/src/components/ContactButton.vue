@@ -1,5 +1,12 @@
 <template>
-    <el-button class="contato-button" @click="navigateTo()">CONTATE-NOS</el-button>
+    <div> 
+        <b-button class="contato-button" v-b-modal.modal-1>CONTATE-NOS</b-button>
+
+        <b-modal id="modal-1" title="BootstrapVue">
+            <p class="my-4">Hello from modal!</p>
+        </b-modal>
+
+    </div>
 </template>
 
 <style lang="scss">
@@ -27,9 +34,7 @@ export default {
     name: 'ContactButton',
 
     methods: {
-        navigateTo() {
-             window.location.href = "http://localhost:8080/#/";
-        }
+        
     },
 }
 </script>
