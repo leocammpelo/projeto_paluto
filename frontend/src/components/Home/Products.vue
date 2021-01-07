@@ -24,7 +24,7 @@
     
     .products-container {
         display: flex;
-        padding: 5%;
+        padding: 0 5% 0 5%;
         flex-direction: column !important;
         justify-content: center;
         max-width: $container-max-width;
@@ -55,6 +55,7 @@
             margin-top: 15px;
             height: auto;
             width: 80% !important;
+            margin-bottom: 50px;
         }
     }
 

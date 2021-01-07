@@ -102,19 +102,19 @@ export default {
                     id: 0,
                     title: "Exclusivade ",
                     description: "Inspiramos você a pensar grande!",
-                    photo: require("../../assets/background1.jpg")
+                    photo: require("../../assets/background1.png")
                 },
                 {
                     id: 1,
                     title: "Qualidade",
                     description: "Nossa satisfação é você!",
-                    photo: require("../../assets/background2.jpg")
+                    photo: require("../../assets/background2.png")
                 },
                 {
                     id: 2,
                     title: "Requinte",
                     description: "Buscamos constatemente a transformação, evolução e modernização!",
-                    photo: require("../../assets/background3.jpg")
+                    photo: require("../../assets/background3.png")
                 },
             ],
         }
