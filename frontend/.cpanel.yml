@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/public_html/paluto
+    - export DEPLOYPATH=/home2/paluto/public_html/paluto
     - /bin/cp * $DEPLOYPATH
