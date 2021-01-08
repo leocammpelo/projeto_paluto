@@ -8,12 +8,14 @@
                     </div>
                     <div style="padding: 14px;">
                         <p class="title-style"> <b> {{ title }} </b> </p>
-                        <p>Saiba mais <img :src="iconeMais" class="iconeMais-style"> </p>
                     </div>
                 </el-card>
             </div>
             <div class="flip-card-back">
-                <p class="description"> {{ excerpt }} </p>
+                <div class="estilo-div-back" style="padding: 5px;">
+                    <p class="description"> <b> {{ excerpt }} </b> </p>
+                    <a class="estilo-saiba-mais" :href="link" target="_blank"> <p>Saiba mais +</p></a>
+                </div>
             </div>
         </div>
     </div>
@@ -68,18 +70,11 @@
                     }
 
                     .title-style {
-                        margin-top: 15px;
+                        margin-top: 30px;
                         margin-bottom: 0px;
                         font-size: 20px;
                         font-weight: bold;
                         color: $secondary-font-color;
-                    }
-
-                    .description {
-                        align-items: left;
-                        justify-content: left;
-                        font-size: 15px;
-                        color: $secondary-font-color;       
                     }
 
                     p {
@@ -88,14 +83,6 @@
                         align-items: center;
                         justify-content: center;
   
-                        .iconeMais-style {
-                            margin-left: 5px;
-                            height: 13px;
-                            display: flex;
-                            opacity: 0.8;
-                        }
-
-
                     }
                     
                 }
@@ -107,16 +94,29 @@
         
             .flip-card-back {
                 display: flex;
+                height: 100%;
                 align-items: center;
                 justify-content: center;
                 background-color: #FEFEFE;
                 color: #000000;
                 transform: rotateY(180deg);
 
-                p {
-                    font-size: 14px;
-                    padding: 4%;
+
+                .estilo-saiba-mais {
+                    font-weight: bold;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #000000;
+                    
+                    p {
+                        margin-top: 60px;
+                    }
                 }
+
+                .estilo-saiba-mais:hover {
+                    color:  #D8965C;             
+                }
+
             }
 
             .flip-card-front, .flip-card-back {
@@ -179,7 +179,8 @@ export default {
         id: Intl,
         image: String,
         title: String,
-        description: String
+        description: String,
+        link: String
     },
 
     data() {

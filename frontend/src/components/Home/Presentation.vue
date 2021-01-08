@@ -3,7 +3,7 @@
         <el-main>
             <el-col class="presentation-video-description" :sm="24" :md="12">
                 <h4 class="presentation-subtitulo">Sobre nós</h4>
-                <h2 class="presentation-tittle"> DA NOSSA FAMÍLIA PARA SUA FAMÍLIA</h2>
+                <h2 class="presentation-tittle"> DA NOSSA FAMÍLIA PARA VOCÊ</h2>
                 <p id="text-presentation"> {{ videoDescription1 }} </p>
                 <p id="text-presentation1"> {{ videoDescription2 }} </p>
             </el-col>

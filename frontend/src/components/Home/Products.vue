@@ -13,6 +13,7 @@
                     :image="item.imagem"
                     :title="item.titulo"
                     :description="item.descricao"
+                    :link="item.link"
                 />
             </el-col>
         </el-row>
@@ -104,21 +105,24 @@ export default {
                     id: 0,
                     imagem: require("@/assets/escritorio.png"),
                     titulo: "Corporativo (Escritórios)",
-                    descricao: "ADOTE BOAS ESTRATÉGIAS NO SEU ESPAÇO, PARA TRAZER BONS RESULTADOS"
+                    descricao: "ADOTE BOAS ESTRATÉGIAS NO SEU ESPAÇO, PARA TRAZER BONS RESULTADOS",
+                    link: "https://photos.app.goo.gl/HQuUNBYWrg7UhDen8"
                 },
 
                 {
                     id: 1,
                     imagem: require("@/assets/casa.png"),
                     titulo: "Casa",
-                    descricao: "CUIDAR DA CASA É CUIDAR DE VOCÊ"
+                    descricao: "CUIDAR DA CASA É CUIDAR DE VOCÊ",
+                    link: "https://photos.app.goo.gl/E7ktaD5NvV83NWyY6"
                 },
 
                 {
                     id: 2,
                     imagem: require("@/assets/decoracao.png"),
                     titulo: "Decoração",
-                    descricao: "DECORAR É A ARTE DE CONECTAR PESSOAS E ESPAÇOS"
+                    descricao: "DECORAR É A ARTE DE CONECTAR PESSOAS E ESPAÇOS",
+                    link: "https://photos.app.goo.gl/6uwA6HNeZ8yHSL657"
                 },
             ],
         }
