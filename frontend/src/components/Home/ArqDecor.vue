@@ -133,7 +133,7 @@ export default {
 
     data() {
         return {
-            titulo: "SOLICITAR ACESSORIA",
+            titulo: "SOLICITAR ASSESSORIA",
             link: "https://api.whatsapp.com/send?phone=5535988792903",
         }
     },
