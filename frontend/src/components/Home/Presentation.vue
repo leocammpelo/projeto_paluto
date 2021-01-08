@@ -4,7 +4,8 @@
             <el-col class="presentation-video-description" :sm="24" :md="12">
                 <h4 class="presentation-subtitulo">Sobre nós</h4>
                 <h2 class="presentation-tittle"> DA NOSSA FAMÍLIA PARA SUA </h2>
-                <p id="text-presentation"> <b> {{ videoDescription1 }} </b> <br><br> {{ videoDescription2 }} </p>
+                <p id="text-presentation"> {{ videoDescription1 }} </p>
+                <p id="text-presentation1"> {{ videoDescription2 }} </p>
             </el-col>
             <el-col class="youtube-video" align="center" :sm="24" :md="12">
                 <youtube id="youtube-video" :video-id="video_id" :mute="true" @ready="ready"></youtube>
@@ -187,6 +188,7 @@ export default {
 
 function setEfect() {
     document.getElementById("text-presentation").className = "efeito-text";
+    document.getElementById("text-presentation1").className = "efeito-text";
 }
 
 </script>

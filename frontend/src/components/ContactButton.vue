@@ -27,7 +27,7 @@ export default {
 
     methods: {
          navigateTo() {
-             window.location.href = "http://localhost:8080/#/";
+             window.location.href = "http://www-palutomoveis-con-br.rds.land/promocao-cadeira-eiffel";
         }       
     },
 }
