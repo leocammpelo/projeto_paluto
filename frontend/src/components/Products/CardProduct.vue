@@ -8,7 +8,7 @@
                     </div>
                     <div style="padding: 14px;">
                         <p class="title-style"> <b> {{ title }} </b> </p>
-                        <p> <a href="/#" target="_blank"> saiba mais <img :src="iconeMais" class="iconeMais-style"> </a></p>
+                        <p>saiba mais <img :src="iconeMais" class="iconeMais-style"> </p>
                     </div>
                 </el-card>
             </div>
@@ -24,9 +24,8 @@
     .flip-card {
         height: 430px;
         margin: 20px;
-        width: auto;
+        width: 93%;
         background-color: transparent;
-        perspective: 1000px;
 
         .flip-card-inner {
             position: relative;
@@ -77,29 +76,26 @@
                     }
 
                     .description {
+                        align-items: left;
+                        justify-content: left;
                         font-size: 15px;
                         color: $secondary-font-color;       
                     }
 
                     p {
+                        margin-top: 15px;
                         display: flex;
+                        align-items: center;
                         justify-content: center;
-                        
-                        a {
-                            color: #282728;
-                            cursor: pointer;
+  
+                        .iconeMais-style {
+                            margin-left: 5px;
+                            height: 13px;
+                            display: flex;
                             opacity: 0.8;
-
-                            .iconeMais-style {
-                                height: 12px;
-                                opacity: 0.8;
-                            }
                         }
 
-                        a:hover {
-                            text-decoration: none;
-                            color: #282728;
-                        }
+
                     }
                     
                 }
@@ -137,7 +133,7 @@
     @media screen and (max-width: 1024px) {
         .flip-card {
             margin-top: 10px;
-            height: 300px !important;
+            height: 315px !important;
 
 
             .flip-card-inner {

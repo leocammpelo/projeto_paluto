@@ -24,7 +24,7 @@
     
     .products-container {
         display: flex;
-        padding: 5%;
+        padding: 0 5% 0 5%;
         flex-direction: column !important;
         justify-content: center;
         max-width: $container-max-width;
@@ -43,6 +43,7 @@
             }
 
             .titulo {
+                color: #363435;
                 font-size: 30px;
                 font-weight: bold;
                 margin: 0;
@@ -55,6 +56,7 @@
             margin-top: 15px;
             height: auto;
             width: 80% !important;
+            margin-bottom: 50px;
         }
     }
 
@@ -70,11 +72,17 @@
                 }
             
             }
-
+            
             .product-estilo {
                 margin-top: 40px;
                 height: auto;
                 width: 80% !important;
+
+                .el-col {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }       
     }
@@ -93,23 +101,23 @@ export default {
             products: [
                 {
                     id: 0,
-                    imagem: require("@/assets/escritorio.jpg"),
+                    imagem: require("@/assets/escritorio.png"),
                     titulo: "Móveis para escritório",
-                    descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis et sagittis, nisl amet malesuada a. Lorem scelerisque amet nec sagittis fringilla massa. Morbi iaculis vitae aliquet purus. Tincidunt velit eleifend semper dolor nulla. Purus id cursus ultrices turpis. Metus, ultricies habitasse aliquam justo hendrerit turpis feugiat. Pharetra euismod eget egestas sociis rhoncus. Leo, turpis eget in egestas non adipiscing quis dolor vulputate. Commodo enim nibh feugiat imperdiet massa mi moles"
+                    descricao: "É cada vez mais comum as pessoas trocarem os ambientes corporativos para executarem suas atividades profissionais em casa. Assim, o ambiente doméstico precisa se adaptar aos novos tempos e tornar-se mais flexível, mas sem perder a elegância. O escritório não precisa ser sinônimo de ambiente burocrático ou improvisado. Cada vez mais pessoas separam um cantinho da casa para o home office e, para o trabalho render, ele precisa ser um espaço confortável, organizado, agradável e bonito."
                 },
 
                 {
                     id: 1,
-                    imagem: require("@/assets/escritorio.jpg"),
-                    titulo: "Móveis para escritório",
+                    imagem: require("@/assets/casa.png"),
+                    titulo: "Móveis para casa",
                     descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis et sagittis, nisl amet malesuada a. Lorem scelerisque amet nec sagittis fringilla massa. Morbi iaculis vitae aliquet purus. Tincidunt velit eleifend semper dolor nulla. Purus id cursus ultrices turpis. Metus, ultricies habitasse aliquam justo hendrerit turpis feugiat. Pharetra euismod eget egestas sociis rhoncus. Leo, turpis eget in egestas non adipiscing quis dolor vulputate. Commodo enim nibh feugiat imperdiet massa mi moles"
                 },
 
                 {
                     id: 2,
-                    imagem: require("@/assets/escritorio.jpg"),
-                    titulo: "Móveis para escritório",
-                    descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis et sagittis, nisl amet malesuada a. Lorem scelerisque amet nec sagittis fringilla massa. Morbi iaculis vitae aliquet purus. Tincidunt velit eleifend semper dolor nulla. Purus id cursus ultrices turpis. Metus, ultricies habitasse aliquam justo hendrerit turpis feugiat. Pharetra euismod eget egestas sociis rhoncus. Leo, turpis eget in egestas non adipiscing quis dolor vulputate. Commodo enim nibh feugiat imperdiet massa mi moles"
+                    imagem: require("@/assets/decoracao.png"),
+                    titulo: "Decoração",
+                    descricao: "Para você se inspirar, separamos ideias de projetos que fogem do óbvio, com um décor lindo. O ambiente pode ser flexível, multiuso e com alguns truques, otimizar espaço e tornar o ambiente super inspirador."
                 },
             ],
         }

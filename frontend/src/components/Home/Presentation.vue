@@ -4,7 +4,7 @@
             <el-col class="presentation-video-description" :sm="24" :md="12">
                 <h4 class="presentation-subtitulo">Sobre nós</h4>
                 <h2 class="presentation-tittle"> DA NOSSA FAMÍLIA PARA SUA </h2>
-                <p id="text-presentation"> {{videoDescription}} </p>
+                <p id="text-presentation"> <b> {{ videoDescription1 }} </b> <br><br> {{ videoDescription2 }} </p>
             </el-col>
             <el-col class="youtube-video" align="center" :sm="24" :md="12">
                 <youtube id="youtube-video" :video-id="video_id" :mute="true" @ready="ready"></youtube>
@@ -75,14 +75,16 @@
                 margin: 0;                }
 
             .presentation-tittle {
+                color: #363435;
                 font-size: 30px;
                 font-weight: bold;
                 margin: 0;
-                margin-bottom: 25px;    
+                margin-bottom: 25px; 
             }
 
             p {
-                font-size: 1.4em;
+                color: #363435;
+                font-size: 16px;
             }
 
         }
@@ -108,13 +110,16 @@
 
             .presentation-video-description {
 
-                h1 {
-                    font-size: 3.5em;
-                    text-align: center;
+                .presentation-subtitulo {
+                    font-size: 20px;
+                }
+
+                .presentation-tittle {
+                    font-size: 26px;
                 }
 
                 p {
-                    font-size: 1em;
+                    font-size: 14px;
                     text-align: center;
                 }
             } 
@@ -134,7 +139,8 @@ export default {
     
     data() {
         return {
-            videoDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras odio pellentesque id maecenas congue magna. Elementum sed scelerisque tempor nibh posuere urna. Consectetur malesuada tortor nisl quisque et pellentesque mus bibendum. A, malesuada ac ipsum aliquam varius ut pulvinar. Hac convallis nunc ege",
+            videoDescription1: "Paluto Móveis - SEU AMBIENTE EM BOAS MÃOS",
+            videoDescription2: "Em meio a Pandemia, surge a Paluto Móveis com o objetivo de lhe atender de forma exclusiva, com produtos de alta qualidade e requinte. Seu fundador, Paulo Vinicius, vem de uma família de tradição no ramo moveleiro, e entende de móveis há mais de 25 anos. Nossa o proposta é oferecer a solução ideal para seu ambiente, para isso contamos com a TALENTOSA arquiteta Stella Monteiros, para auxiliar desde a elaboração do seu projeto até a escolha definitiva dos móveis e decorações",
             video_id: "64YeMgImYQE",
             
             player: {},
