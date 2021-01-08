@@ -9,6 +9,7 @@
       <Partners />
       <Contact />
     </el-row>
+    <Footer />
   </el-row>
   
 </template>
@@ -25,6 +26,7 @@ import Products from "../components/Home/Products"
 import Partners from "../components/Home/Partners"
 import Contact from "../components/Home/Contact"
 import ArqDecor from "../components/Home/ArqDecor"
+import Footer from "../components/Footer"
 
 export default {
   name: 'Home',
@@ -36,6 +38,7 @@ export default {
     ArqDecor,
     Partners,
     Contact,
+    Footer,
   }
 }
 </script>
