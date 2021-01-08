@@ -109,7 +109,7 @@ export default {
                 {
                     id: 1,
                     imagem: require("@/assets/casa.png"),
-                    titulo: "Móveis para casa",
+                    titulo: "Móveis para sala",
                     descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis et sagittis, nisl amet malesuada a. Lorem scelerisque amet nec sagittis fringilla massa. Morbi iaculis vitae aliquet purus. Tincidunt velit eleifend semper dolor nulla. Purus id cursus ultrices turpis. Metus, ultricies habitasse aliquam justo hendrerit turpis feugiat. Pharetra euismod eget egestas sociis rhoncus. Leo, turpis eget in egestas non adipiscing quis dolor vulputate. Commodo enim nibh feugiat imperdiet massa mi moles"
                 },
 
