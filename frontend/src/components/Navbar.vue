@@ -224,17 +224,14 @@ export default {
     mounted() {
         window.addEventListener('scroll', () => {
             const scrolled = window.scrollY;
-            const firstDiv = document.getElementById("presentation").offsetHeight;
-            if(scrolled > firstDiv) {
-                this.changeColorNav("setColor");
-            }
+            //const firstDiv = document.getElementById("presentation").offsetHeight;
 
-            else if (scrolled > 1 && scrolled <= firstDiv) {
-                this.changeColorNav("setOpacity")
-            }
-
-            else {
+            if(scrolled == 0) {
                 this.changeColorNav("notSetColor")
+            }
+
+            else  {
+                this.changeColorNav("setColor");
             }
 
         });

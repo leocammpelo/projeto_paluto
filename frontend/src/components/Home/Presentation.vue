@@ -75,13 +75,15 @@
                 margin: 0;                }
 
             .presentation-tittle {
+                color: #363435;
                 font-size: 30px;
                 font-weight: bold;
                 margin: 0;
-                margin-bottom: 25px;    
+                margin-bottom: 25px; 
             }
 
             p {
+                color: #363435;
                 font-size: 16px;
             }
 
