@@ -38,6 +38,7 @@
             }
 
             .subtitulo {
+                color: #363435;
                 font-size: 30px;
                 font-weight: bold;
                 margin: 0;
