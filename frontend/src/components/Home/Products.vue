@@ -109,15 +109,15 @@ export default {
                 {
                     id: 1,
                     imagem: require("@/assets/casa.png"),
-                    titulo: "Móveis para casa",
-                    descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis et sagittis, nisl amet malesuada a. Lorem scelerisque amet nec sagittis fringilla massa. Morbi iaculis vitae aliquet purus. Tincidunt velit eleifend semper dolor nulla. Purus id cursus ultrices turpis. Metus, ultricies habitasse aliquam justo hendrerit turpis feugiat. Pharetra euismod eget egestas sociis rhoncus. Leo, turpis eget in egestas non adipiscing quis dolor vulputate. Commodo enim nibh feugiat imperdiet massa mi moles"
+                    titulo: "Móveis para sala",
+                    descricao: "A sala de estar é um dos cantinhos mais especiais da casa. Além de oferecer a primeira impressão do seu lar, na sala é onde momentos divertidos entre a família e os amigos acontecem. Seja para conversar, para assistir um filme ou acompanhar os jogos do time do coração, o conforto na sala de estar é essencial."
                 },
 
                 {
                     id: 2,
                     imagem: require("@/assets/decoracao.png"),
                     titulo: "Decoração",
-                    descricao: "Para você se inspirar, separamos ideias de projetos que fogem do óbvio, com um décor lindo. O ambiente pode ser flexível, multiuso e com alguns truques, otimizar espaço e tornar o ambiente super inspirador."
+                    descricao: "Diante do espaço cada vez mais reduzido em casas e, principalmente, apartamentos novos, surge o desafio de pensar em ambientes funcionais, charmosos e completos. E para você se inspirar, separamos ideias de projetos que fogem do óbvio, com um décor lindo. O ambiente pode ser flexível, multiuso e com alguns truques, otimizar espaço e tornar o ambiente super inspirador."
                 },
             ],
         }

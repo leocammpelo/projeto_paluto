@@ -8,7 +8,7 @@
                     </div>
                     <div style="padding: 14px;">
                         <p class="title-style"> <b> {{ title }} </b> </p>
-                        <p>saiba mais <img :src="iconeMais" class="iconeMais-style"> </p>
+                        <p>Saiba mais <img :src="iconeMais" class="iconeMais-style"> </p>
                     </div>
                 </el-card>
             </div>
