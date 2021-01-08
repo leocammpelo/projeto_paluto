@@ -5,7 +5,7 @@
                     <el-col align="center" class="carousel-item-content">
                         <h2>{{ item.title }}</h2>
                         <p>{{ item.description }}</p>
-                        <ContactButton/>
+                        <ContactButton :title="titulo" :link="link" />
                     </el-col>
                 </el-row>
             </el-carousel-item>
@@ -97,6 +97,10 @@ import ContactButton from "../ContactButton"
 export default {
     data() {
         return {
+
+            titulo: "CONTATE-NOS",
+            link: "http://www-palutomoveis-con-br.rds.land/promocao-cadeira-eiffel",
+
             itens: [
                 {
                     id: 0,

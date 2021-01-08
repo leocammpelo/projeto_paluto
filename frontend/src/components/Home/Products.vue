@@ -103,22 +103,22 @@ export default {
                 {
                     id: 0,
                     imagem: require("@/assets/escritorio.png"),
-                    titulo: "Móveis para escritório",
-                    descricao: "É cada vez mais comum as pessoas trocarem os ambientes corporativos para executarem suas atividades profissionais em casa. Assim, o ambiente doméstico precisa se adaptar aos novos tempos e tornar-se mais flexível, mas sem perder a elegância. O escritório não precisa ser sinônimo de ambiente burocrático ou improvisado. Cada vez mais pessoas separam um cantinho da casa para o home office e, para o trabalho render, ele precisa ser um espaço confortável, organizado, agradável e bonito."
+                    titulo: "Corporativo (Escritórios)",
+                    descricao: "ADOTE BOAS ESTRATÉGIAS NO SEU ESPAÇO, PARA TRAZER BONS RESULTADOS"
                 },
 
                 {
                     id: 1,
                     imagem: require("@/assets/casa.png"),
-                    titulo: "Móveis para sala",
-                    descricao: "A sala de estar é um dos cantinhos mais especiais da casa. Além de oferecer a primeira impressão do seu lar, na sala é onde momentos divertidos entre a família e os amigos acontecem. Seja para conversar, para assistir um filme ou acompanhar os jogos do time do coração, o conforto na sala de estar é essencial."
+                    titulo: "Casa",
+                    descricao: "CUIDAR DA CASA É CUIDAR DE VOCÊ"
                 },
 
                 {
                     id: 2,
                     imagem: require("@/assets/decoracao.png"),
                     titulo: "Decoração",
-                    descricao: "Diante do espaço cada vez mais reduzido em casas e, principalmente, apartamentos novos, surge o desafio de pensar em ambientes funcionais, charmosos e completos. E para você se inspirar, separamos ideias de projetos que fogem do óbvio, com um décor lindo. O ambiente pode ser flexível, multiuso e com alguns truques, otimizar espaço e tornar o ambiente super inspirador."
+                    descricao: "DECORAR É A ARTE DE CONECTAR PESSOAS E ESPAÇOS"
                 },
             ],
         }

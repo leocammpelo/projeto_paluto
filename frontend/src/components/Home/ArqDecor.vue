@@ -20,7 +20,7 @@
                     consultoria exclusiva para os clientes na compra dos móveis.
                 </h4>
                 <div class="botao-estilo">
-                    <ContactButton/>
+                    <ContactButton :title="titulo" :link="link" />
                 </div>
             </el-col>
         </el-row>
@@ -133,6 +133,8 @@ export default {
 
     data() {
         return {
+            titulo: "SOLICITAR ACESSORIA",
+            link: "https://api.whatsapp.com/send?phone=5535988792903",
         }
     },
 

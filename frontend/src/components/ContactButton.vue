@@ -1,6 +1,6 @@
 <template>
     <div> 
-        <el-button class="contato-button" @click="navigateTo()">CONTATE-NOS</el-button>
+        <el-button class="contato-button" @click="navigateTo(link)"> {{ title }} </el-button>
     </div>
 </template>
 
@@ -25,9 +25,14 @@
 export default {
     name: 'ContactButton',
 
+    props: {
+        title: String,
+        link: String
+    },
+
     methods: {
-         navigateTo() {
-             window.location.href = "http://www-palutomoveis-con-br.rds.land/promocao-cadeira-eiffel";
+         navigateTo(link) {
+             window.location.href = link;
         }       
     },
 }

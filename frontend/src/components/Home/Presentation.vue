@@ -3,12 +3,12 @@
         <el-main>
             <el-col class="presentation-video-description" :sm="24" :md="12">
                 <h4 class="presentation-subtitulo">Sobre nós</h4>
-                <h2 class="presentation-tittle"> DA NOSSA FAMÍLIA PARA SUA </h2>
+                <h2 class="presentation-tittle"> DA NOSSA FAMÍLIA PARA SUA FAMÍLIA</h2>
                 <p id="text-presentation"> {{ videoDescription1 }} </p>
                 <p id="text-presentation1"> {{ videoDescription2 }} </p>
             </el-col>
             <el-col class="youtube-video" align="center" :sm="24" :md="12">
-                <youtube id="youtube-video" :video-id="video_id" :mute="true" @ready="ready"></youtube>
+                <youtube id="youtube-video" :video-id="video_id" :mute="false" @ready="ready"></youtube>
             </el-col>
         </el-main>
     </el-row>
@@ -140,9 +140,9 @@ export default {
     
     data() {
         return {
-            videoDescription1: "Paluto Móveis - SEU AMBIENTE EM BOAS MÃOS",
+            videoDescription1: "PALUTO MÓVEIS - SEU AMBIENTE EM BOAS MÃOS",
             videoDescription2: "Em meio a Pandemia, surge a Paluto Móveis com o objetivo de lhe atender de forma exclusiva, com produtos de alta qualidade e requinte. Seu fundador, Paulo Vinicius, vem de uma família de tradição no ramo moveleiro, e entende de móveis há mais de 25 anos. Nossa o proposta é oferecer a solução ideal para seu ambiente, para isso contamos com a TALENTOSA arquiteta Stella Monteiros, para auxiliar desde a elaboração do seu projeto até a escolha definitiva dos móveis e decorações",
-            video_id: "64YeMgImYQE",
+            video_id: "_5wzuIFAKFU",
             
             player: {},
             youTubeComponente: {},
