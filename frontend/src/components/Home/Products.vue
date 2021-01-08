@@ -28,7 +28,7 @@
         flex-direction: column !important;
         justify-content: center;
         max-width: $container-max-width;
-        background-color: $secondary-background-color;
+        background-color: #F9F9F9;
         margin: 0 auto;
         width: 100%;
 
@@ -39,7 +39,8 @@
                 color: #363435;
                 font-size: 24px;
                 font-weight: 100;
-                margin: 0;          
+                margin: 0;
+                margin-top: 30px;          
             }
 
             .titulo {
