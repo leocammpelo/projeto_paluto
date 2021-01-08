@@ -32,7 +32,7 @@ export default {
 
     methods: {
          navigateTo(link) {
-             window.location.href = link;
+             window.open(link);
         }       
     },
 }
