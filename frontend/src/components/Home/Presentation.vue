@@ -8,7 +8,7 @@
                 <p id="text-presentation1"> {{ videoDescription2 }} </p>
             </el-col>
             <el-col class="youtube-video" align="center" :sm="24" :md="12">
-                <youtube id="youtube-video" :video-id="video_id" :mute="false" @ready="ready"></youtube>
+                <youtube id="youtube-video" :video-id="video_id" :mute="true" @ready="ready"></youtube>
             </el-col>
         </el-main>
     </el-row>
