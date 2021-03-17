@@ -106,7 +106,7 @@ export default {
                     id: 0,
                     title: "Exclusivade ",
                     description: "Inspiramos você a pensar grande!",
-                    photo: require("../../assets/background1.png")
+                    photo: require("../../assets/background1.jpg")
                 },
                 {
                     id: 1,

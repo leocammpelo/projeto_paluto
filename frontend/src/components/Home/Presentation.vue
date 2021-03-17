@@ -141,7 +141,7 @@ export default {
     data() {
         return {
             videoDescription1: "PALUTO MÓVEIS - SEU AMBIENTE EM BOAS MÃOS",
-            videoDescription2: "Em meio a Pandemia, surge a Paluto Móveis com o objetivo de lhe atender de forma exclusiva, com produtos de alta qualidade e requinte. Seu fundador, Paulo Vinicius, vem de uma família de tradição no ramo moveleiro, e entende de móveis há mais de 25 anos. Nossa o proposta é oferecer a solução ideal para seu ambiente, para isso contamos com a TALENTOSA arquiteta Stella Monteiros, para auxiliar desde a elaboração do seu projeto até a escolha definitiva dos móveis e decorações",
+            videoDescription2: "Em meio a Pandemia, surge a Paluto Móveis com o objetivo de lhe atender de forma exclusiva, com produtos de alta qualidade e requinte. Seu fundador, Paulo Vinicius, vem de uma família de tradição no ramo moveleiro, e entende de móveis há mais de 25 anos. Nossa proposta é oferecer a solução ideal para seu ambiente, para isso contamos com a TALENTOSA arquiteta Stella Monteiros, para auxiliar desde a elaboração do seu projeto até a escolha definitiva dos móveis e decorações",
             video_id: "_5wzuIFAKFU",
             
             player: {},

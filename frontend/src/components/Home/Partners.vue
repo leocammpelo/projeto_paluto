@@ -109,46 +109,41 @@ export default {
                 },
                 {
                     id: 1,
-                    image: require("@/assets/logo_cavaletti.jpg"),
-                    link: "https://www.cavaletti.com.br"
-                },
-                {
-                    id: 2,
                     image: require("@/assets/logo_blume.png"),
                     link: "https://www.blumeimport.com"
                 },
                 {
-                    id: 3,
+                    id: 2,
                     image: require("@/assets/logo_plaxmetal.png"),
                     link: "https://www.plaxmetal.com.br"
                 },
                 {
-                    id: 4,
+                    id: 3,
                     image: require("@/assets/logo_rudnick.png"),
                     link: "https://www.rudnick.com.br"
                 },
                 {
-                    id: 5,
+                    id: 4,
                     image: require("@/assets/logo_kappesberg.png"),
                     link: "https://www.kappesberg.com.br"
                 },
                 {
-                    id: 6,
+                    id: 5,
                     image: require("@/assets/logo_lara.jpg"),
                     link: "https://www.laramoveis.com.br"
                 },
                 {
-                    id: 7,
+                    id: 6,
                     image: require("@/assets/logo_combinare.jpg"),
                     link: "https://www.combinare.com.br"
                 },
                 {
-                    id: 8,
+                    id: 7,
                     image: require("@/assets/logo_herval.jpg"),
                     link: "https://www.moveisherval.com.br"
                 },
                 {
-                    id: 9,
+                    id: 8,
                     image: require("@/assets/logo_vip.png"),
                     link: "https://www.vipestofados.com.br"
                 },
