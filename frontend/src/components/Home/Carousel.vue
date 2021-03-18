@@ -104,7 +104,7 @@ export default {
             itens: [
                 {
                     id: 0,
-                    title: "Exclusivade ",
+                    title: "Exclusividade ",
                     description: "Inspiramos você a pensar grande!",
                     photo: require("../../assets/background1.jpg")
                 },
